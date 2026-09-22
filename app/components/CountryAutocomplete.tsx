@@ -138,7 +138,7 @@ export default function CountryAutocomplete() {
         <ul
           id="country-listbox"
           role="listbox"
-          className="mt-2 overflow-hidden rounded-lg border bg-white shadow-sm"
+          className="mt-2 overflow-hidden rounded-lg border shadow-sm"
         >
           {countries.map((country, index) => (
             <li
@@ -150,7 +150,7 @@ export default function CountryAutocomplete() {
               onClick={() => selectCountry(index)}
               className={`cursor-pointer border-b px-4 py-3 last:border-b-0 ${
                 highlightedIndex === index
-                  ? "bg-gray-100"
+                  ? "bg-gray-400"
                   : ""
               }`}
             >
